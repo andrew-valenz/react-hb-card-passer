@@ -1,15 +1,7 @@
 import React from 'react';
 import CardList from './CardList';
 
-export default function Player({
-  player,
-  setTo,
-  hand,
-  setFrom,
-  setSelectedCard,
-  selectedCard,
-  to,
-}) {
+export default function Player({ player, setTo, hand, setFrom, selectedCard, to }) {
   return (
     <div
       className={`player ${to === player ? 'selected-player' : ''}`}
@@ -21,7 +13,7 @@ export default function Player({
         cards={hand}
         setFrom={setFrom}
         selectedCard={selectedCard}
-        setSelectedCard={setSelectedCard}
+        // setSelectedCard={setSelectedCard}
       />
     </div>
   );
