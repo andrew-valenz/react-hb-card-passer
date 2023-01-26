@@ -3,8 +3,7 @@ import { GameContext } from '../context/GameContext.js';
 import Card from './Card';
 import { useContext } from 'react';
 
-export default function CardList({ player }) {
-  const { deck: cards } = useContext(GameContext);
+export default function CardList({ player, cards }) {
   return (
     <div className="card-list">
       {cards.map((card) => (
