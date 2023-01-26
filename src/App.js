@@ -27,13 +27,7 @@ function App() {
         <Player player={1} hand={playerOneHand} />
         <Player player={2} hand={playerTwoHand} />
         <Player player={3} hand={playerThreeHand} />
-        <CardList
-          cards={deck}
-          selectedCard={selectedCard}
-          // setSelectedCard={setSelectedCard}
-          setFrom={setFrom}
-          player={'deck'}
-        />
+        <CardList cards={deck} player={'deck'} />
       </section>
       <section>
         {selectedCard && (
