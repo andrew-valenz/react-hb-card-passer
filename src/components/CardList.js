@@ -8,7 +8,7 @@ export default function CardList({ cards, player, setFrom, selectedCard }) {
         <Card
           key={card.suit + card.value}
           // setSelectedCard={setSelectedCard}
-          selectedCard={selectedCard}
+          // selectedCard={selectedCard}
           player={player}
           setFrom={setFrom}
           card={card}
